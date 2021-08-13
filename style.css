@@ -1,9 +1,5 @@
 body{
-<<<<<<< HEAD
-  background-color: #4ecef5!important;
-=======
-  background-color: #ffbad1 !important;
->>>>>>> 9a33bd267b63c24338cc5fb888ca1ec22a09b75b
+ background-color: #4ecef5!important;
 }
 
 #header-title{
@@ -14,6 +10,7 @@ body{
 }
 
 .navbar{
+  position: fixed;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
@@ -44,8 +41,6 @@ body{
 #productslist{
   display:grid;
   grid-template-columns: repeat(2,1fr);
-  background-color:#f5a4a4;
-  color: yellow;
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
   font-size:15px;
   text-align: center;
