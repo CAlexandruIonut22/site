@@ -21,12 +21,17 @@
 
 <body>
 
-    <nav class="navbar">
-    <a class="btn btn-primary" href="home.html" role="button">HOME</a>
-    <a class="btn btn-primary" href="products.html" role="button">Products</a>
-    <a class="btn btn-primary" href="https://www.redbubble.com/people/IDK-FEELS/shop?asc=u" target="_blank" role="button">Redbubble</a>
-    <a class="btn btn-primary" href="about.html" role="button"> About</a>
-    </nav>
+  <div class="topnav" id="navigation-bar">
+  <nav class="navbar">
+    <a class="active" href="home.html" role="button">HOME</a>
+    <a href="products.html" role="button">Products</a>
+    <a href="https://www.redbubble.com/people/IDK-FEELS/shop?asc=u" target="_blank" role="button">Redbubble</a>
+    <a href="about.html" role="button"> About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+</div>
 
   <div id="productslist">
     <ol>
@@ -44,6 +49,17 @@
   </li>
 </ol>
     </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("navigation-bar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
 </body>
 </html>
